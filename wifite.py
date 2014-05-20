@@ -387,7 +387,7 @@ class RunConfiguration:
                 else: print GR+' [+]'+W+' minimum target power set to %s' % (G+str(self.ATTACK_MIN_POWER)+W)
             if options.tx:
                 try: self.TX_POWER = int(options.tx)
-                except ValueError: print R+' [!]'+O+' invalid TX power leve: %s' % ( R+options.tx+W)
+                except ValueError: print R+' [!]'+O+' invalid TX power level: %s' % ( R+options.tx+W)
                 except IndexError: print R+' [!]'+O+' no TX power level given!'+W
                 else: print GR+' [+]'+W+' TX power level set to %s' % (G+str(self.TX_POWER)+W)
             if options.quiet:
